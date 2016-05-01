@@ -7,6 +7,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.devaiss.consts.AppURL;
 import com.devaiss.consts.StaticPage;
+/*
+ * Root Controller
+ * 
+ * */
 
 @Controller
 public class RootController {
