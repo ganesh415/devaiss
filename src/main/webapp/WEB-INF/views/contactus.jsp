@@ -7,8 +7,8 @@
     <head>
         <meta charset="utf-8">
         
-        <title> devaiss | contact</title>
-        <meta name="description" content="">
+        <title> | Home</title>
+       <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="resources/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -26,7 +26,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="resources/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-	<body>
+    <body>
     	<div class="loader">
     		<div class="spinner">
 			  <div class="double-bounce1"></div>
@@ -34,20 +34,20 @@
 			</div>
     	</div>
 				
-		<div class="nav-container">
-			<nav class="top-bar ">
-				
+		<div class="nav-container" >
+			<nav class="top-bar" >
+				<div class="container" >
 								
 					<div class="row nav-menu">
-						<div class="col-sm-3 col-md-2 columns">
+						<div class="col-sm-3 col-md-2 columns" >
 							<a href="index.html">
 								<img class="logo logo-light" alt="Logo" src="resources/img/logo-light.jpg">
-								<img class="logo logo-dark" alt="Logo" src="resources/img/logo-dark.jpg">
+								<img class="logo logo-dark" alt="Logo" src="resources/img/dev_log.png">
 							</a>
 						</div>
 					
-						<div class="col-sm-9 col-md-10 columns">
-							<ul class="menu">
+						<div class="col-sm-9 col-md-10 columns" style="text-align: right;">
+							<ul class="menu"  >
                             	<li ><a href="${pageContext.request.contextPath}">Home</a></li>
 								<li ><a href="aboutus.html">About Us</a>							
 								</li>
@@ -62,94 +62,103 @@
 								<li ><a href="login.html">Login</a></li>
 							</ul>
 
-							<ul class="social-icons text-right">
-								<li>
-									<a href="https://facebook.com/google">
-										<i class="icon social_facebook"></i>
-									</a>
-								</li>
 							
-						
-							</ul>
-						</div><div ><a >
-								<img  alt="Logo" src="resources/img/red-blue.jpg">
-								
-							</a></div>
+						</div>
 					</div><!--end of row-->
 					
 					<div class="mobile-toggle">
 						<i class="icon icon_menu"></i>
 					</div>
 					
-				
+				</div><!--end of container--><div ><a >
+								<img  alt="Logo" src="resources/img/red-blue.jpg" >
+								
+							</a></div>
 			</nav>
 		
-					</div>
-					<div class="main-container">
-					
-			<section class="article-single">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-5">
-							<div class="article-body">
-                            	<h2>Devai Solutions</h2>
-<h2>Telephone :</h2>
-<p>Office : <a href="tel:+17178899762">+1 (717) 889-9762</a><br />
-<!--Recruiting : <a href="tel:+14253585200">+1 425 358 5200</a><br />
-Payroll &amp; Billing : <a href="tel:+14252562250">+1 425 256 2250</a> -->
-</p>
-<h2>Email :</h2>
-<p>Recruiting : <a href="mailto:recruiting@devaiss.com">recruiting@devaiss.com</a><br />
-Feedback : <a href="mailto:feedback@devaiss.com">feedback@devaiss.com</a><br />
-Accounting : <a href="mailto:billing@devaiss.com">billing@devaiss.com</a><br />
-Information : <a href="mailto:info@devaiss.com">info@devaiss.com</a><br />
-Training : <a href="mailto:training@devaiss.com">training@devaiss.com</a></p>
-
-							</div><!--end of article body-->
-							
-						</div>
-						
-						<div class="col-sm-8 col-md-offset-1">
-						<h2>Send Us Your Query</h2>
-<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :" /></span><br />
-<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span>
-<span class="wpcf7-form-control-wrap referred"><input type="text" name="referred" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" /></span>
-<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments"></textarea></span>
-<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit_btn" /></p>	
-					</div><!--end of row-->
-				</div><!--end of container-->	
-			</section>
-		</div> 
+			
 		
-					<!--<div id="content"><a name="content1"></a>
+		</div>
+		
+					<!--CONTENT START-->
+        <div id="content"><a name="content1"></a>
         	<div class="main contact_sec">
-            	
-                <div class="container">
-                	
-										<h2>Devai Solutions</h2>
-<h2>Telephone :</h2>
-<p>Office : <a href="tel:+14255623457">+1 425 562 3457</a><br />
-Recruiting : <a href="tel:+14253585200">+1 425 358 5200</a><br />
-Payroll &amp; Billing : <a href="tel:+14252562250">+1 425 256 2250</a></p>
-<h2>Email :</h2>
-<p>Recruiting : careers@c2stechs.com<br />
-Feedback : <a href="mailto:feedback@c2stechs.com">feedback@c2stechs.com</a><br />
-Accounting : <a href="mailto:billing@c2stechs.com">billing@c2stechs.com</a><br />
-Information : <a href="mailto:info@c2stechs.com">info@c2stechs.com</a><br />
-Training : <a href="mailto:training@c2stechs.com">training@c2stechs.com</a></p>
-<h2>Fax :</h2>
-<p><a> +1 509 562 9175 </a></p>
-					                   
-                    
-					
-<div class="col-sm-3 col-md-offset-1">
+			<p>&nbsp;</p>
+            	<h2 style="color:#115eac;"><strong>We would love to hear from you, if you have any questions please feel free to reach out to us.</h2>
+                <div class="clear">
+                	<div class="contact_left fullwidthmargin newsed">
+										
 
-<h2>Send Us Your Query</h2>
+<p>&nbsp;</p>
+
+<strong><span style="color: #0062b3;">Address:</span> </strong></br>
+&nbsp;</br>
+<strong>5072 Pajabon Drive, Suite 409<br />
+Harrisburg PA, 17111</strong></p>
+
+<p><strong><span style="color: #0062b3;">Telephone:</span> </br>
+Office:&nbsp;<span style="color: #0062b3;"> (717) 889-9762</span></br>
+Recruiting:&nbsp;<span style="color: #0062b3;">(973) 517-6341</span></br>
+Payroll &amp; Billing:&nbsp;<span style="color: #0062b3;">(215) 433-0466</span></strong></p>
+<p><strong><span style="color: #0062b3;">Email:</span></br>
+Recruiting:&nbsp;<span style="color: #0062b3;">careers@devaiss.com</span></br>
+Feedback:&nbsp;<span style="color: #0062b3;">feedback@devaiss.com</span></br>
+Acounting:&nbsp;<span style="color: #0062b3;"> billing@devaiss.com</span></br>
+Information:&nbsp;<span style="color: #0062b3;">info@devaiss.com</span></br>
+Training:&nbsp;<span style="color: #0062b3;">training@devaiss.com</span></p>
+</div>
+					                    </div>
+                    <div class="contact_right fullwidthmargin">
+                    
+					<div role="form" class="wpcf7" id="wpcf7-f50-o1" lang="en-US" dir="ltr">
+					
+					<b style="color: green;" >Thank you, we will reach you shortly</b>
+					
+<div class="screen-reader-response"></div>
+<form action="/save" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="50" />
+<input type="hidden" name="_wpcf7_version" value="4.2.2" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f50-o1" />
+<input type="hidden" name="_wpnonce" value="55cb8fa72b" />
+</div><p>&nbsp;</p><p>&nbsp;</p>
+<h2><strong><span style="color: #0062b3;">Send Us Your Query</span></h2>
 <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :" /></span><br />
 <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span><span class="wpcf7-form-control-wrap referred"><input type="text" name="referred" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" /></span><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments"></textarea></span><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit_btn" /></p>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>    </div>    -->           
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                    </div>
+                
+                </div>
+                <div class="clear newsed" align="center">
+                	<h2><strong><span style="color: #0062b3;">Location:</span></h2>
+                    
+                    	<div class="default">
+                    	<p><span><strong>Headquarters</span><br />
 
-		
+						<span>Devai Solutions Inc. USA</span><br />
+						<strong>5072 Pajabon Drive, Suite 409<br />
+Harrisburg PA, 17111</strong></p>
+                        
+                        <h2><strong><span style="color: #0062b3;">Map:</span></h2>
+                        <div class="container">
+			<section class="map">
+				
+            	    
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.2831680717395!2d-76.7972190850809!3d40.247237779385266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8bf0eefce38b9%3A0x166981138990035!2s5072+Pajabon+Dr+%23409%2C+Harrisburg%2C+PA+17111%2C+USA!5e0!3m2!1sen!2sin!4v1459400006951"
+				   width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+            
+			</section>
+			
+			
+				</div>
+                    
+                </div>
+                
+            </div>	
+        <div class="clear"></div>
+        </div>
+        <!--CONTENT END-->
 		<div class="footer-container">
 	<footer class="bg-primary short-2">
 				<section class="bottom-logo">
@@ -159,15 +168,24 @@ Training : <a href="mailto:training@c2stechs.com">training@c2stechs.com</a></p>
             	<img src="resources/img/logo-bottom.png">
 
             </div>
-            <div class="col-md-11">
+            <div class="col-md-8 align="left;">
             	                <ul>                	
                                 <li><a>© Copyright 2016. All Rights Reserved</a> </li>
-                                <li>|</li>                     
+                                <li><a>|</li></a>                     
                                 <li><a href="sitemap.html">Sitemap</a></li>
-                                <li>|</li>                                         
+                                <li><a>|</li></a>                                         
                                 <li><a href="privacy policy.html">Privacy policy</a></li>
-                                <li>|</li>                      
+                                <li><a>|</li></a>                    
                                 <li><a href="terms of use.html">Terms Of Use</a></li>
+								
+             </ul>
+            </div>
+			<div class="col-md-3" align="right" >
+            	                <ul>                	
+                                
+								<li ><a href="facebook.com"><img src="resources/img/facebook.png"/></a></li>
+                    	<li><a href="images/twitter.png"><img src="resources/img/twitter.png"/></a> </li>
+                    	<li><a href="#"><img src="resources/img/linkedin.png"/></a></li>
              </ul>
             </div>
         </div>
@@ -178,6 +196,10 @@ Training : <a href="mailto:training@c2stechs.com">training@c2stechs.com</a></p>
 			</footer>
 		</div>
 		
+
+		
+
+				
 		<script src="resources/js/jquery.min.js"></script>
         <script src="resources/js/jquery.plugin.min.js"></script>
         <script src="resources/js/bootstrap.min.js"></script>
@@ -193,3 +215,4 @@ Training : <a href="mailto:training@c2stechs.com">training@c2stechs.com</a></p>
         <script src="resources/js/scripts.js"></script>
     </body>
 </html>
+				
