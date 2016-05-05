@@ -87,7 +87,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #000000;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 15px;
 }
 h1,
 h2,
@@ -424,34 +424,118 @@ nav hr {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
-  line-height: 0;
+  
   top: 0;
 }
 .top-bar .logo {
-  max-width: 100px;
+  
   position: relative;
-  bottom: 7px;
-  margin-left:0px;
+  bottom: 0px;
+  margin-left:-10px;
 }
 .logo.logo-wide {
   max-width: 225px;
   bottom: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
-.logo.logo-square {
-  max-width: 100px;
-  max-height: 60px;
-  bottom: 20px;
-  margin-bottom: -20px;
+/*---------Contact Start---------*/
+.contact_left{/*width:382px;*/width:31.67%;float:left;margin-bottom:30px;text-align:left;}
+.contact_right{/*width:661px;*/width:54.89%;float:right;margin-bottom:30px;text-align:left;}
+.contact_sec h2{font:normal 21px 'robotomedium';color:#5b3971;margin:0;padding:0 0 10px 0;line-height:normal;}
+.contact_sec h2 span{font-family:'open_sansregular';}
+.contact_left p{font:normal 14px 'open_sansregular';color:#5b3971;margin:0;padding:0 0 14px 0;line-height:25px;}
+.contact_left p span{font-family:'open_sansbold';}
+.contact_left p a{color:#5b3971;}
+.location_box1{/*width:382px;*/width:31.67%;text-align:left;margin:0 2% 0 0;float:left;}
+.location_box1 p{padding-bottom:45px;}
+.location_box1 p span{font-family:'open_sansbold';}
+/*---------Contact End---------*/
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip { 
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
 }
 .nav-sticky .logo-wide {
-  bottom: 12px !important;
+  bottom: 0px !important;
 }
 .nav-sticky .logo-square {
   bottom: 20px !important;
 }
 .nav-menu {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .nav-menu .social-icons {
   float: right;
@@ -502,10 +586,10 @@ nav hr {
 .menu li a {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color:#0d7588;
+  color:#004466;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
@@ -598,7 +682,7 @@ nav hr {
   background: rgba(255, 255, 255, 0.9);
 }
 .top-bar.nav-sticky .nav-menu {
-  padding-top: 32px;
+  padding-top: 20px;
 }
 .top-bar.nav-sticky .menu li a {
   padding-bottom: 32px;
@@ -1069,7 +1153,7 @@ header.fullscreen-element .overlay:before,
   background-color: #333333;
 }
 .bottom-logo{
-	padding:17px 0 50px 0;
+	padding:0px 0 5px 0;
 	background:#f2f2f2;
 	border-top:1px solid #fff;
 	-moz-box-shadow:    inset 0 0 10px #bdbaba;
@@ -1361,7 +1445,7 @@ img.phone-portrait {
 }
 .clients-2 {
 	text-align: center;
-	padding: 30px 0px 64px 0px;
+	padding: 30px 0px 40px 0px;
 }
 .clients-2 .col-md-2 {
   height: 80px;
@@ -1461,6 +1545,20 @@ img.phone-portrait {
   font-size: 48px;
   color: #136480;
 }
+.newsed{-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px #888;
+box-shadow: 0 0 5px #888; padding:20px;}
+.plat-form{
+	/*border-top:10px solid #eaeff3;*/
+	margin-top:20px; background-color:#FFFFFF;
+	padding-top:20px; 
+	-moz-box-shadow:    inset 0 0 10px #bdbaba;
+   -webkit-box-shadow: inset 0 0 10px #bdbaba;
+   box-shadow:         inset 0 0 10px #bdbaba;
+	
+.nersedd{-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;}
 .icons-large li:last-child {
   margin-right: 0px;
 }
