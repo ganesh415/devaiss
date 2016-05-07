@@ -1,11 +1,13 @@
 package com.devaiss.vo;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Entity
 @Table(name="contactus")
 public class Contactus {
 	@Id
@@ -44,7 +46,12 @@ public class Contactus {
 	public void setComments(String comments) {
 		this.comments = comments;
 	}
-	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	
 
 }

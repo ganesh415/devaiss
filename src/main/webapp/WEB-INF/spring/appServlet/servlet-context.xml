@@ -21,8 +21,47 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.devaiss.controllers" />
+	<context:component-scan base-package="com.devaiss" />
 	
 	
+	
+	<!-- BoneCP configuration -->
+	<beans:bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
+	   <beans:property name="driverClass" value="${jdbc.driverClassName}" />
+	   <beans:property name="jdbcUrl" value="${jdbc.url}" />
+	   <beans:property name="username" value="${jdbc.username}"/>
+	   <beans:property name="password" value="${jdbc.password}"/>
+	   <beans:property name="maxConnectionsPerPartition" value="30"/>
+	   <beans:property name="minConnectionsPerPartition" value="10"/>
+	   <beans:property name="partitionCount" value="3"/>
+	   <beans:property name="deregisterDriverOnClose" value="true"/>
+	</beans:bean>
+	
+	<!-- database property file -->
+	<beans:bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<beans:property name="location" value="classpath:database.properties" />
+	</beans:bean>
+	
+	 <!-- Hibernate 4 SessionFactory Bean definition -->
+    <beans:bean id="hibernate4AnnotatedSessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <beans:property name="dataSource" ref="dataSource" />
+        <beans:property name="annotatedClasses">
+            <beans:list>
+                <beans:value>com.devaiss.vo.Contactus</beans:value>
+            </beans:list>
+        </beans:property>
+        <beans:property name="hibernateProperties">
+            <beans:props>
+                <beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+                </beans:prop>
+                <beans:prop key="hibernate.show_sql">true</beans:prop>
+            </beans:props>
+        </beans:property>
+    </beans:bean>
+	
+	<beans:bean id="dbFactory" class="com.devaiss.dao.DBFactory">
+	  <beans:constructor-arg name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"></beans:constructor-arg> 
+	</beans:bean>
 	
 </beans:beans>

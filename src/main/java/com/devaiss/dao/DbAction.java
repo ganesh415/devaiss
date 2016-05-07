@@ -6,6 +6,7 @@ public interface DbAction<T> {
 	
 	public T readObj(int id);
 	public List<T> getList();
+	public int Save(T obj);
 	
 
 }

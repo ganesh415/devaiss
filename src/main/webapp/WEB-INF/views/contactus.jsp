@@ -1,3 +1,7 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,7 +11,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title> | Home</title>
+        <title> | Contactus</title>
        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,11 +115,19 @@ Training:&nbsp;<span style="color: #0062b3;">training@devaiss.com</span></p>
                     <div class="contact_right fullwidthmargin">
                     
 					<div role="form" class="wpcf7" id="wpcf7-f50-o1" lang="en-US" dir="ltr">
+					<c:if test="${success}">
+					 <b style="color: green;" >Thank you, we will reach you shortly</b>
+					</c:if>
 					
-					<b style="color: green;" >Thank you, we will reach you shortly</b>
+					<c:if test="${fail}">
+					<b style="color: red;" >Oops, please try again</b>
+					</c:if>
 					
 <div class="screen-reader-response"></div>
-<form action="/save" method="post" class="wpcf7-form" novalidate="novalidate">
+
+<c:url var="contactussave" value="/contactussave" ></c:url>
+
+<form:form action="${contactussave}" method="post" class="wpcf7-form" novalidate="novalidate" commandName="contactus">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="50" />
 <input type="hidden" name="_wpcf7_version" value="4.2.2" />
@@ -124,9 +136,14 @@ Training:&nbsp;<span style="color: #0062b3;">training@devaiss.com</span></p>
 <input type="hidden" name="_wpnonce" value="55cb8fa72b" />
 </div><p>&nbsp;</p><p>&nbsp;</p>
 <h2><strong><span style="color: #0062b3;">Send Us Your Query</span></h2>
-<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :" /></span><br />
-<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span><span class="wpcf7-form-control-wrap referred"><input type="text" name="referred" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" /></span><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments"></textarea></span><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit_btn" /></p>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                    </div>
+<p><span class="wpcf7-form-control-wrap your-name">
+<form:input type="text" path="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :" /></span><br />
+<span class="wpcf7-form-control-wrap your-email">
+<form:input type="email" path="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span><span class="wpcf7-form-control-wrap referred">
+<form:input type="text" path="referby" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" /></span><span class="wpcf7-form-control-wrap your-message">
+<form:textarea path="comments" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments"></form:textarea></span>
+<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit_btn" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form:form></div>                    </div>
                 
                 </div>
                 <div class="clear newsed" align="center">
