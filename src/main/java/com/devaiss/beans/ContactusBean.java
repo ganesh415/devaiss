@@ -1,11 +1,26 @@
 package com.devaiss.beans;
 
-import com.devaiss.vo.Contactus;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
+
 
 public class ContactusBean {
+	@NotEmpty(message="NotEmpty.contactus.name") 
+	@Size(min=3, max=30, message="Size.contactus.name")
 	private String name;
+	@NotEmpty(message="NotEmpty.contactus.email") 
+	@Email(message="Email.contactus.email")
 	private String email;
-	private String referby;
+	@NotEmpty(message="NotEmpty.contactus.referby")  
+	@Size(min=3, max=30, message="Size.contactus.referby")
+	private String referby; 
+	@NotEmpty(message="NotEmpty.contactus.comments")  
+	@Size(min=10, max=500, message="Size.contactus.comments")
 	private String comments;
 	public String getName() {
 		return name;

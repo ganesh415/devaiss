@@ -29,6 +29,13 @@
         <link href="resources/css/theme-blues.css" rel="stylesheet" type="text/css" media="all"/>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="resources/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <style>
+.error {
+    color: #ff0000;
+    font-style: italic;
+    font-weight: bold;
+}
+</style>
     </head>
     <body>
     	<div class="loader">
@@ -116,18 +123,18 @@ Training:&nbsp;<span style="color: #0062b3;">training@devaiss.com</span></p>
                     
 					<div role="form" class="wpcf7" id="wpcf7-f50-o1" lang="en-US" dir="ltr">
 					<c:if test="${success}">
-					 <b style="color: green;" >Thank you, we will reach you shortly</b>
+					 <b style="color: green;" class="msg">Thank you, we will reach you shortly</b>
 					</c:if>
 					
 					<c:if test="${fail}">
-					<b style="color: red;" >Oops, please try again</b>
+					<b style="color: red;" class="msg">Oops, please try again</b>
 					</c:if>
 					
 <div class="screen-reader-response"></div>
 
 <c:url var="contactussave" value="/contactussave" ></c:url>
 
-<form:form action="${contactussave}" method="post" class="wpcf7-form" novalidate="novalidate" commandName="contactus">
+<form:form action="${contactussave}" method="post" class="wpcf7-form" novalidate="novalidate" commandName="contactus" id="contactusform">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="50" />
 <input type="hidden" name="_wpcf7_version" value="4.2.2" />
@@ -137,12 +144,16 @@ Training:&nbsp;<span style="color: #0062b3;">training@devaiss.com</span></p>
 </div><p>&nbsp;</p><p>&nbsp;</p>
 <h2><strong><span style="color: #0062b3;">Send Us Your Query</span></h2>
 <p><span class="wpcf7-form-control-wrap your-name">
-<form:input type="text" path="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :" /></span><br />
+<form:input id="name" type="text" path="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required textbox1" aria-required="true" aria-invalid="false" placeholder="Name :"  maxlength="30"/></span><br />
+<form:errors path="name" cssClass="error"></form:errors>
 <span class="wpcf7-form-control-wrap your-email">
-<form:input type="email" path="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span><span class="wpcf7-form-control-wrap referred">
-<form:input type="text" path="referby" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" /></span><span class="wpcf7-form-control-wrap your-message">
-<form:textarea path="comments" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments"></form:textarea></span>
-<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit submit_btn" /></p>
+<form:input id="email" type="email" path="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email textbox1" aria-required="true" aria-invalid="false" placeholder="Email :" /></span><span class="wpcf7-form-control-wrap referred">
+<form:errors path="email" cssClass="error"></form:errors>
+<form:input id="referby" type="text" path="referby" value="" size="40" class="wpcf7-form-control wpcf7-text textbox1" aria-invalid="false" placeholder="Referred By :" maxlength="30"/></span><span class="wpcf7-form-control-wrap your-message">
+<form:errors path="referby" cssClass="error"></form:errors>
+<form:textarea id="comments" path="comments" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea textarea1" aria-invalid="false" placeholder="Comments" maxlength="500"></form:textarea></span>
+<form:errors path="comments" cssClass="error"></form:errors>
+<button class="wpcf7-form-control wpcf7-submit submit_btn" id="conatctusBtn">Submit</button></p>
 <div class="wpcf7-response-output wpcf7-display-none"></div></form:form></div>                    </div>
                 
                 </div>
@@ -230,6 +241,7 @@ Harrisburg PA, 17111</strong></p>
         <script src="resources/js/lightbox.min.js"></script>
         <script src="resources/js/jquery.countdown.min.js"></script>
         <script src="resources/js/scripts.js"></script>
+        <script src="resources/js/contactus.js"></script>
     </body>
 </html>
 				
