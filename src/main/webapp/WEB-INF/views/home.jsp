@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title> | Home</title>
+        <title> Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,32 +29,37 @@
 			</div>
     	</div>
 				
-		<div class="nav-container" >
-			<nav class="top-bar" >
-				<div class="container" >
+		<div class="nav-container">
+			<nav class="top-bar ">
+				<div class="container">
 								
 					<div class="row nav-menu">
 						<div class="col-sm-3 col-md-2 columns" >
-							<a href="index.html">
-								<img class="logo logo-light" alt="Logo" src="resources/img/logo-light.jpg">
-								<img class="logo logo-dark" alt="Logo" src="resources/img/dev_log.png">
+							<a href="${pageContext.request.contextPath}">
+								<img class="  logo logo-light" alt="Logo" src="resources/img/dev_log.png">
+								<img class=" logo logo-dark" alt="Logo" src="resources/img/dev_log.png">
 							</a>
 						</div>
 					
 						<div class="col-sm-9 col-md-10 columns" style="text-align: right;">
-							<ul class="menu"  >
+							<ul class="menu "  >
                             	<li ><a href="${pageContext.request.contextPath}">Home</a></li>
-								<li ><a href="aboutus.html">About Us</a>							
+								<li class="has-dropdown"><a>About Us</a>
+                                   <ul class="subnav"style="color:#990000;text-align: left;">
+										<li><a href="${pageContext.request.contextPath}/aboutdevai">About Devai</a></li>
+										<li><a href="${pageContext.request.contextPath}/corevalues">Core Values</a></li>
+										
+									</ul>								
 								</li>
                                 
 								<li ><a href="${pageContext.request.contextPath}/services">services</a>							
 								</li>
-								<li ><a href="careers.html">careers</a>						
+								<li ><a href="${pageContext.request.contextPath}/careers">careers</a>						
 									
 								</li>                           			
 								
-                                <li ><a href="${pageContext.request.contextPath}/contactus">Contact Us</a></li>
-								<li ><a href="login.html">Login</a></li>
+                                <li ><a href="${pageContext.request.contextPath}/contact">Contact Us</a></li>
+								<li ><a href="${pageContext.request.contextPath}/login">Login</a></li>
 							</ul>
 
 							
@@ -76,28 +81,69 @@
 		</div>
 		
 		<div class="main-container">
-			<section class="hero-divider">
-			
-				<div class="background-image-holder overlay">
-					<img class="background-image" alt="Poster Image For Mobiles" src="resources/img/side1.jpg">
-				</div>
-			
-				
-				
-				<div class="container">
-					<div class="row">	
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h1 class="text-white">Solutions That You Need</h1>
-							<p class="lead text-white">
-								A team of diverse and interesting people delivering a range of professional services to help you succeed
-							</p>
-							
-							
-						</div>
-					</div><!--end of row-->
-				</div><!--end of row-->
-			</section>
-			<section class="clients-2">
+			<!-- star banners -->
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Carousel indicators -->
+
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+ <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>   
+
+        <!-- Wrapper for carousel items -->
+
+        <div class="carousel-inner">
+
+            <div class="item active">
+
+             <a href="${pageContext.request.contextPath}"> <img src="resources/img/page 1.png" alt="First Slide"></a>
+
+
+            </div>
+
+            <div class="item">
+
+                <a href="${pageContext.request.contextPath}/services">  <img src="resources/img/page 2.png" alt="Second Slide"></a>
+                <!--<div class="carousel-caption"><p class="slide-text">Application Development
+</p></div>-->
+                
+            </div>
+
+            <div class="item">
+
+                <a href="${pageContext.request.contextPath}/careers">  <img src="resources/img/page 3.png" alt="Third Slide"></a>
+                
+
+            </div>
+            
+             <div class="item">
+
+               <a href="${pageContext.request.contextPath}/contact"> <img src="resources/img/page 4.png" alt="Fourth Slide"></a> 
+                
+
+            </div>
+            
+            
+
+        </div>
+
+
+    </div>
+
+
+
+<!-- end banners -->
+
+			<section class="clients-2 ">
 				<div class="container">
                 	<div class="col-sm-12 text-left">
 									
@@ -105,7 +151,7 @@
 									
 								</div>
                 	
-					<div class="row">
+					<div class="  row newsed">
 						<div class="col-md-2 col-sm-4">
 							<img alt="Client Logo" src="resources/img/client1.jpg">
 						</div>
@@ -135,10 +181,10 @@
 			
 			
 			
-			<section class="feature-selector" >
+			<section class="feature-selector plat-form nersedd " >
             	
             
-				<div class="container" >
+				<div class="container " >
 					<div class="row" >
 						<ul class="selector-tabs clearfix" >
 							<li class="clearfix text-primary col-md-3 col-sm-6 active">
@@ -163,25 +209,24 @@
 							</li><!--end of tab-->
 						</ul>
 					</div>
-					<div class="red-bd"></div>
-				</div>
+
 				
 				<div class="container" align="justify">
 					<ul class="selector-content">
 						<li class="clearfix active">
 							<div class="row">
 								<div class="col-sm-12 text-center" >
-									<h1 style="font-family:Century Schoolbook;color:#CC5200;">At Devai, as you grow we grow</h1>
+									<h2 style="font-family:Century Schoolbook;color:#990000;">At Devai, As You Grow We Grow</h2><p>&nbsp;</p>
 								</div>
 							</div><!--end of row-->
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="lead">
-                                    Whether it be Solutions you need or Services you require, Devai has a diverse team of talented individuals to help you succeed. Devai Solutions specializes in improving operational performance and IT delivery. <b>This is achieved by the way we effectively use resources, processes and technology.</b>
+									<p class="lead"><strong>
+                                    Whether it be Solutions you need or Services you require, Devai has a diverse team of talented individuals to help you succeed. Devai Solutions specializes in improving operational performance and IT delivery. This is achieved by the way we effectively use resources, processes and technology.
 									
                                       We address everything from business integration to compliance, process improvement to change management, technology strategy to application development and systems integration.								
-									  </p>	
+									  </strong></p>	
 								</div>
 							</div><!--end of row-->
 						</li><!--end of individual feature content-->
@@ -189,17 +234,17 @@
 						<li class="clearfix">
 							<div class="row">
 								<div class="col-sm-12 text-center">
-									<h1 style="font-family:Century Schoolbook;color:#CC5200;">Services tailored to your needs</h1>
+									<h2 style="font-family:Century Schoolbook;color:#990000;">Services Tailored To Your Needs</h2><p>&nbsp;</p>
 								</div>
 							</div><!--end of row-->
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="lead">
+									<p class="lead"><strong>
                           Devai delivers professional services tailored to our clients’ specific requirements. Our services address specific needs of enterprise IT programs, communications, internet technologies, product development and data management. 
 									
                                We have specialists knowledgeable in strategy, business analysis, management, technology and implementations to solve any business or technical problem. With a detailed set of best practices and processes, we ensure our services accommodate all your business needs.
-									</p>	
+									</strong></p>	
 								</div>
 							</div><!--end of row-->
 						</li><!--end of individual feature content-->
@@ -207,16 +252,17 @@
 						<li class="clearfix">
 							<div class="row">
 								<div class="col-sm-12 text-center">
-									<h1 style="font-family:Century Schoolbook;color:#CC5200;">Solutions you require</h1>
+									<h2 style="font-family:Century Schoolbook;color:#990000;">Solutions You Require</h2><p>&nbsp;</p>
 								</div>
 							</div><!--end of row-->
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="lead">
+									<p class="lead"><strong>
 Information Technology is no longer the backbone of a company but an essential and integral part of any organization on which business processes and functions depend. A combination of Skills, talent and competencies awaken a technology driven business transition. 										
 								
-As organizations constantly strive to iterate their business and IT strategies, Devai Solutions will adapt by implementing the appropriate necessities and methodologies required for IT Services to have a seamless transition from conceptualization to implementation. 									</p>	
+As organizations constantly strive to iterate their business and IT strategies, Devai Solutions will adapt by implementing the appropriate necessities and methodologies required for IT Services to have a seamless transition from conceptualization to implementation. 
+									</strong></p>	
 								</div>
 							</div><!--end of row-->
 						</li><!--end of individual feature content-->
@@ -224,16 +270,17 @@ As organizations constantly strive to iterate their business and IT strategies, 
 						<li class="clearfix">
 							<div class="row">
 								<div class="col-sm-12 text-center">
-									<h1 style="font-family:Century Schoolbook;color:#CC5200;">Support that drives business</h1>
+									<h2 style="font-family:Century Schoolbook;color:#990000;">Support That Drives Business</h2><p>&nbsp;</p>
 								</div>
 							</div><!--end of row-->
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<p class="lead">
+									<p class="lead"><strong>
 Devai Solutions helps your staff achieve the best results in complete harmony.We ensure interactions from your organization to your customers happen seamlessly, while helping you deliver exceptional quality and enhanced customer experiences around the clock.										
 								
-The importance of having an enterprise-wide, adaptable and customizable solution to assist with your business processes and workflows is now greater than ever. We help you rapidly build business-specific solutions for all challenges you face.									</p>	
+The importance of having an enterprise-wide, adaptable and customizable solution to assist with your business processes and workflows is now greater than ever. We help you rapidly build business-specific solutions for all challenges you face.		
+							</strong></p>	
 								</div>
 							</div><!--end of row-->
 						</li><!--end of individual feature content-->
@@ -254,15 +301,24 @@ The importance of having an enterprise-wide, adaptable and customizable solution
             	<img src="resources/img/logo-bottom.png">
 
             </div>
-            <div class="col-md-11">
+            <div class="col-md-8 align="left;">
             	                <ul>                	
                                 <li><a>© Copyright 2016. All Rights Reserved</a> </li>
-                                <li>|</li>                     
-                                <li><a href="sitemap.html">Sitemap</a></li>
-                                <li>|</li>                                         
-                                <li><a href="privacy policy.html">Privacy policy</a></li>
-                                <li>|</li>                      
-                                <li><a href="terms of use.html">Terms Of Use</a></li>
+                                <li><a>|</li></a>                     
+                                <li><a href="${pageContext.request.contextPath}/sitemap">Sitemap</a></li>
+                                <li><a>|</li></a>                                         
+                                <li><a href="${pageContext.request.contextPath}/privacy policy">Privacy policy</a></li>
+                                <li><a>|</li></a>                    
+                                <li><a href="${pageContext.request.contextPath}/terms of use">Terms Of Use</a></li>
+								
+             </ul>
+            </div>
+			<div class="col-md-3" align="right" >
+            	                <ul>                	
+                                
+								<li ><a href="facebook.com"><img src="resources/img/facebook.png"/></a></li>
+                    	<li><a href="images/twitter.png"><img src="resources/img/twitter.png"/></a> </li>
+                    	<li><a href="#"><img src="resources/img/linkedin.png"/></a></li>
              </ul>
             </div>
         </div>
@@ -273,9 +329,7 @@ The importance of having an enterprise-wide, adaptable and customizable solution
 			</footer>
 		</div>
 		
-
 		
-
 				
 		<script src="resources/js/jquery.min.js"></script>
         <script src="resources/js/jquery.plugin.min.js"></script>

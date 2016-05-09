@@ -11,7 +11,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title> | Contactus</title>
+        <title>Contactus</title>
        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,32 +45,37 @@
 			</div>
     	</div>
 				
-		<div class="nav-container" >
-			<nav class="top-bar" >
-				<div class="container" >
+		<div class="nav-container">
+			<nav class="top-bar ">
+				<div class="container">
 								
 					<div class="row nav-menu">
 						<div class="col-sm-3 col-md-2 columns" >
 							<a href="index.html">
-								<img class="logo logo-light" alt="Logo" src="resources/img/logo-light.jpg">
-								<img class="logo logo-dark" alt="Logo" src="resources/img/dev_log.png">
+								<img class="  logo logo-light" alt="Logo" src="resources/img/dev_log.png">
+								<img class=" logo logo-dark" alt="Logo" src="resources/img/dev_log.png">
 							</a>
 						</div>
 					
 						<div class="col-sm-9 col-md-10 columns" style="text-align: right;">
-							<ul class="menu"  >
+							<ul class="menu "  >
                             	<li ><a href="${pageContext.request.contextPath}">Home</a></li>
-								<li ><a href="aboutus.html">About Us</a>							
+								<li class="has-dropdown"><a>About Us</a>
+                                   <ul class="subnav"style="color:#990000;text-align: left;">
+										<li><a href="${pageContext.request.contextPath}/aboutdevai">About Devai</a></li>
+										<li><a href="${pageContext.request.contextPath}/corevalues">Core Values</a></li>
+										
+									</ul>								
 								</li>
                                 
 								<li ><a href="${pageContext.request.contextPath}/services">services</a>							
 								</li>
-								<li ><a href="careers.html">careers</a>						
+								<li ><a href="${pageContext.request.contextPath}/careers">careers</a>						
 									
 								</li>                           			
 								
-                                <li ><a href="${pageContext.request.contextPath}/contactus">Contact Us</a></li>
-								<li ><a href="login.html">Login</a></li>
+                                <li ><a href="${pageContext.request.contextPath}/contact">Contact Us</a></li>
+								<li ><a href="${pageContext.request.contextPath}/login">Login</a></li>
 							</ul>
 
 							
@@ -82,7 +87,7 @@
 					</div>
 					
 				</div><!--end of container--><div ><a >
-								<img  alt="Logo" src="resources/img/red-blue.jpg" >
+								<img  alt="Logo" src="resources/img/red-blue.jpg" width="100%">
 								
 							</a></div>
 			</nav>
@@ -197,14 +202,14 @@ Harrisburg PA, 17111</strong></p>
 
             </div>
             <div class="col-md-8 align="left;">
-            	                <ul>                	
+            	                  <ul>                	
                                 <li><a>© Copyright 2016. All Rights Reserved</a> </li>
                                 <li><a>|</li></a>                     
-                                <li><a href="sitemap.html">Sitemap</a></li>
+                                <li><a href="${pageContext.request.contextPath}/sitemap">Sitemap</a></li>
                                 <li><a>|</li></a>                                         
-                                <li><a href="privacy policy.html">Privacy policy</a></li>
+                                <li><a href="${pageContext.request.contextPath}/privacy policy">Privacy policy</a></li>
                                 <li><a>|</li></a>                    
-                                <li><a href="terms of use.html">Terms Of Use</a></li>
+                                <li><a href="${pageContext.request.contextPath}/terms of use">Terms Of Use</a></li>
 								
              </ul>
             </div>

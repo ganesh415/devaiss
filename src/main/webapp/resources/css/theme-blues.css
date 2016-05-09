@@ -2887,7 +2887,7 @@ footer.short-2 .contact-action:hover {
     transition: all .5s ease;
   }
   nav .logo {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
   nav .columns {
     width: 100%;
@@ -2908,7 +2908,7 @@ footer.short-2 .contact-action:hover {
   }
   .top-bar .logo.logo-wide {
     bottom: 3px;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
 	
   }
   .mobile-toggle {
